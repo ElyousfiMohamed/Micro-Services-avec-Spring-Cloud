@@ -34,6 +34,7 @@
         <img src="./Images/Screenshot_11.png" width="700"/>
 	<h3>Insertion données de test</h3>
         <img src="./Images/Screenshot_12.png" width="700"/>
+	<img src="./Images/Screenshot_19.png" width="700"/>
   <h3>Documentation Swagger</h3>
         <img src="./Images/Screenshot_13.png" width="700"/>
 	<h3>API (postman)</h3>
