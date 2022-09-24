@@ -22,7 +22,7 @@ public class BankAccount {
     private String id;
     @Temporal(TemporalType.DATE)
     private Date createdAt;
-    private double balance;
+    private Double balance;
     private String currency;
     @Enumerated(EnumType.STRING)
     private AccountType type;

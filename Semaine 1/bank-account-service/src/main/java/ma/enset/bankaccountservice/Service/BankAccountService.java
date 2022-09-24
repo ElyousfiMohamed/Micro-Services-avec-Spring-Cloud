@@ -13,5 +13,5 @@ public interface BankAccountService {
     BankAccountDto getBankAccount(String bankAccountId) throws BankAccountNotFoundException;
     List<BankAccountDto> getBankAccounts();
     void deleteBankAccount(String id);
-    BankAccountDto updateBankAccount(BankAccountDto bankAccountDto, String id);
+    BankAccountDto updateBankAccount(BankAccountDto bankAccountDto, String id) throws BankAccountNotFoundException;
 }

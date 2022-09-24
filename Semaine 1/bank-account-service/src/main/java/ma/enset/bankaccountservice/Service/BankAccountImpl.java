@@ -49,9 +49,21 @@ public class BankAccountImpl implements BankAccountService {
     }
 
     @Override
-    public BankAccountDto updateBankAccount(BankAccountDto bankAccountDto, String id) {
+    public BankAccountDto updateBankAccount(BankAccountDto bankAccountDto, String id) throws BankAccountNotFoundException {
+        BankAccount bankAccount = bankAccountRepository.findById(id).orElseThrow(() -> new BankAccountNotFoundException("BankAccount not found"));
         bankAccountDto.setId(id);
-        BankAccount bankAccount = bankAccountMapper.toEntity(bankAccountDto);
+        if (bankAccountDto.getCreatedAt() != null) {
+            bankAccount.setCreatedAt(bankAccountDto.getCreatedAt());
+        }
+        if (bankAccountDto.getBalance() != null) {
+            bankAccount.setBalance(bankAccountDto.getBalance());
+        }
+        if (bankAccountDto.getCurrency() != null) {
+            bankAccount.setCurrency(bankAccountDto.getCurrency());
+        }
+        if (bankAccountDto.getType() != null) {
+            bankAccount.setType(bankAccountDto.getType());
+        }
         BankAccount savedBankAccount = bankAccountRepository.save(bankAccount);
         return bankAccountMapper.toDto(savedBankAccount);
     }
