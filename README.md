@@ -1,4 +1,4 @@
-<img src="./Images/topo_readme.jpg"/>
+<img src="./Semaine 1/Images/topo_readme.jpg"/>
 <h1 align="center">Mohamed ELYOUSFI</h1>
 <h2 align="center"><💻 Compte Rendu des Travaux Pratiques Micro-Services💻/></h2><br><br>
 
@@ -96,4 +96,4 @@
     </p>
 </details>
 <h3>...</h3>
-<img src="./Images/rodape_readme.jpg" alt="Art for footer readme.md" />
+<img src="./Semaine 1/Images/rodape_readme.jpg" alt="Art for footer readme.md" />
